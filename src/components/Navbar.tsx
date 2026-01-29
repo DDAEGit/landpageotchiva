@@ -28,15 +28,23 @@ export function Navbar() {
 
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-8">
-                    {/* {['Mission', 'Technology', 'Impact', 'Community'].map((item) =>
-          <a
-            key={item}
-            href={`#${item.toLowerCase()}`}
-            className={`text-sm font-medium transition-colors hover:text-[#c4703d] ${isScrolled ? 'text-stone-600' : 'text-white/90'}`}>
+                    {/* {["Mission", "Technology", "Impact", "Community"].map((item) => (
+                        <a
+                            key={item}
+                            href={`#${item.toLowerCase()}`}
+                            className={`text-sm font-medium transition-colors hover:text-[#c4703d] ${isScrolled ? "text-stone-600" : "text-white/90"}`}
+                        >
+                            {item}
+                        </a>
+                    ))} */}
 
-              {item}
-            </a>
-          )} */}
+                    {[
+                        "https://gedae.ggpen.gov.ao/ferramenta-de-visualizacao/projeto-seca/images/ukflag.png",
+                        "https://gedae.ggpen.gov.ao/ferramenta-de-visualizacao/projeto-seca/images/ptflag.png",
+                    ].map((item) => (
+                        <img width={30} height={15} src={item} alt="Forest texture" className="" />
+                    ))}
+
                     <Button variant={isScrolled ? "primary" : "secondary"} size="sm">
                         <a href="https://gedae.ggpen.gov.ao/ferramenta-de-visualizacao/otchiva/index.php" rel="noopener noreferrer">
                             Login
