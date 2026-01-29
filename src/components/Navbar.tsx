@@ -1,36 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import { Menu, X, Leaf } from 'lucide-react';
-import { Button } from './ui/Button';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useEffect, useState } from "react";
+import { Menu, X, Leaf } from "lucide-react";
+import { Button } from "./ui/Button";
+import { motion, AnimatePresence } from "framer-motion";
 export function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-  return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-6'}`}>
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 20);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+    return (
+        <nav
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-6"}`}
+        >
+            <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                    <div className="bg-[#1a4d2e] p-2 rounded-lg">
+                        <Leaf className="w-6 h-6 text-white" />
+                    </div>
+                    <span className={`font-serif font-bold text-xl tracking-tight ${isScrolled ? "text-[#1a4d2e]" : "text-white"}`}>
+                        Angola Mangrove<span className="text-[#c4703d]">Monitor</span>
+                    </span>
+                </div>
 
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="bg-[#1a4d2e] p-2 rounded-lg">
-            <Leaf className="w-6 h-6 text-white" />
-          </div>
-          <span
-            className={`font-serif font-bold text-xl tracking-tight ${isScrolled ? 'text-[#1a4d2e]' : 'text-white'}`}>
-
-            Angola Mangrove<span className="text-[#c4703d]">Monitor</span>
-          </span>
-        </div>
-
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
-          {['Mission', 'Technology', 'Impact', 'Community'].map((item) =>
+                {/* Desktop Nav */}
+                <div className="hidden md:flex items-center gap-8">
+                    {/* {['Mission', 'Technology', 'Impact', 'Community'].map((item) =>
           <a
             key={item}
             href={`#${item.toLowerCase()}`}
@@ -38,59 +36,58 @@ export function Navbar() {
 
               {item}
             </a>
-          )}
-          <Button variant={isScrolled ? 'primary' : 'secondary'} size="sm">
-            Access Platform
-          </Button>
-        </div>
+          )} */}
+                    <Button variant={isScrolled ? "primary" : "secondary"} size="sm">
+                        <a href="https://gedae.ggpen.gov.ao/ferramenta-de-visualizacao/otchiva/login.php" rel="noopener noreferrer">
+                            Login
+                        </a>
+                    </Button>
+                </div>
 
-        {/* Mobile Toggle */}
-        <button
-          className="md:hidden p-2"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-
-          {isMobileMenuOpen ?
-          <X className={isScrolled ? 'text-[#1a4d2e]' : 'text-white'} /> :
-
-          <Menu className={isScrolled ? 'text-[#1a4d2e]' : 'text-white'} />
-          }
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {isMobileMenuOpen &&
-        <motion.div
-          initial={{
-            opacity: 0,
-            height: 0
-          }}
-          animate={{
-            opacity: 1,
-            height: 'auto'
-          }}
-          exit={{
-            opacity: 0,
-            height: 0
-          }}
-          className="md:hidden bg-white border-t border-stone-100">
-
-            <div className="flex flex-col p-4 gap-4">
-              {['Mission', 'Technology', 'Impact', 'Community'].map((item) =>
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="text-stone-600 font-medium py-2 border-b border-stone-100"
-              onClick={() => setIsMobileMenuOpen(false)}>
-
-                  {item}
-                </a>
-            )}
-              <Button className="w-full mt-2">Access Platform</Button>
+                {/* Mobile Toggle */}
+                <button className="md:hidden p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                    {isMobileMenuOpen ? (
+                        <X className={isScrolled ? "text-[#1a4d2e]" : "text-white"} />
+                    ) : (
+                        <Menu className={isScrolled ? "text-[#1a4d2e]" : "text-white"} />
+                    )}
+                </button>
             </div>
-          </motion.div>
-        }
-      </AnimatePresence>
-    </nav>);
 
+            {/* Mobile Menu */}
+            <AnimatePresence>
+                {isMobileMenuOpen && (
+                    <motion.div
+                        initial={{
+                            opacity: 0,
+                            height: 0,
+                        }}
+                        animate={{
+                            opacity: 1,
+                            height: "auto",
+                        }}
+                        exit={{
+                            opacity: 0,
+                            height: 0,
+                        }}
+                        className="md:hidden bg-white border-t border-stone-100"
+                    >
+                        <div className="flex flex-col p-4 gap-4">
+                            {["Mission", "Technology", "Impact", "Community"].map((item) => (
+                                <a
+                                    key={item}
+                                    href={`#${item.toLowerCase()}`}
+                                    className="text-stone-600 font-medium py-2 border-b border-stone-100"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                    {item}
+                                </a>
+                            ))}
+                            <Button className="w-full mt-2">Access Platform</Button>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </nav>
+    );
 }
