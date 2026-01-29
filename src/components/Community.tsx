@@ -6,8 +6,8 @@ export function Community() {
         <section id="community" className="py-20 bg-white">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-[#c4703d] font-bold text-sm tracking-widest uppercase mb-4">Community First</h2>
-                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-stone-900 mb-6">Guardians of the Mangroves</h3>
+                    <h2 className="text-[#c4703d] font-bold text-sm tracking-widest uppercase mb-4">Otchiva</h2>
+                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-stone-900 mb-6">Field Work Data Collection</h3>
                     {/* <p className="text-stone-600 text-lg">
                         Technology is only a tool. The real work is done by the people who live and work in these ecosystems every day.
                     </p> */}
@@ -44,10 +44,10 @@ export function Community() {
                             />
 
                             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80" />
-                            <div className="absolute bottom-0 left-0 p-6">
-                                <p className="text-white font-serif text-xl font-medium">Local Conservationist</p>
+                            {/* <div className="absolute bottom-0 left-0 p-6">
+                                <p className="text-white font-serif text-xl font-medium">Mangrove Mapping</p>
                                 <p className="text-white/70 text-sm">Luanda Province</p>
-                            </div>
+                            </div> */}
                         </motion.div>
                     ))}
                 </div>

@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Satellite, GalleryHorizontal, BookOpen, ChartColumn } from "lucide-react";
+import { Satellite, GalleryHorizontal, ChartColumn } from "lucide-react";
 export function HowItWorks() {
     const steps = [
         {
             icon: Satellite,
-            title: "Mangrove Monitoring",
+            title: "Mangrove Mapping",
             description: "",
         },
         {
@@ -16,11 +16,6 @@ export function HowItWorks() {
         {
             icon: GalleryHorizontal,
             title: "Change Detection",
-            description: "",
-        },
-        {
-            icon: BookOpen,
-            title: "User Guide",
             description: "",
         },
     ];
@@ -42,7 +37,7 @@ export function HowItWorks() {
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-[#c4703d] font-bold text-sm tracking-widest uppercase mb-4">How It Works</h2>
-                    <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6">Technology in Service of Nature</h3>
+                    <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6">AI-Powered Mangrove Mapping</h3>
                     <p className="text-white/80 text-lg">
                         The tool allows visualization of mangrove areas throughout the national territory, as well as their total area;
                         statistical data by province and by mangrove areas allowing comparison with previous periods.

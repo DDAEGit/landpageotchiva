@@ -24,7 +24,7 @@ export function Mission() {
                         }}
                         className="relative"
                     >
-                        <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+                        <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl" id="usmore">
                             <img
                                 src="https://gedae.ggpen.gov.ao/ferramenta-de-visualizacao/otchiva/images/DJI_20251031154422_0641_D.jpg"
                                 alt="Angolan community near mangroves"
@@ -62,11 +62,11 @@ export function Mission() {
                     >
                         <h2 className="text-[#1a4d2e] font-bold text-sm tracking-widest uppercase mb-4">About Us</h2>
                         <h3 className="text-4xl md:text-5xl font-serif font-bold text-stone-900 mb-6 leading-tight">
-                            Preserving the <span className="text-[#1a4d2e]">Green Lungs</span> of our Coastline
+                            From Satellite to Field: <span className="text-[#1a4d2e]">Mapping</span> Angola’s Mangroves.
                         </h3>
                         <p className="text-lg text-stone-600 mb-8 leading-relaxed">
                             On June 13, 2025, GGPEN and Otchiva negotiated an agreement for the use of the Digital Platform Maps of Angola
-                            Mangroves - an intelligent solution used for mapping mangroves in the country.
+                            Mangroves.
                         </p>
 
                         {/* <ul className="space-y-4 mb-10">

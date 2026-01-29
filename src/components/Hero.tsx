@@ -46,26 +46,33 @@ export function Hero() {
                     >
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-sm font-medium mb-6">
                             <Satellite className="w-4 h-4 text-[#3b82a0]" />
-                            <span>Satellite-Powered Conservation</span>
+                            <span>Satellite-Driven Mapping of Angola’s Mangrove Ecosystems</span>
                         </div>
 
                         <h1 className="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6">
-                            Protecting Angola's <br />
-                            <span className="text-[#c4703d]">Mangrove Heritage</span>
+                            Welcome to Angola <br />
+                            <span className="text-[#c4703d]">Mangrove Maps!</span>
                         </h1>
 
                         <p className="text-lg md:text-xl text-stone-200 mb-8 max-w-2xl leading-relaxed">
-                            Combining advanced earth observation with community wisdom to monitor, protect, and restore our vital coastal
-                            ecosystems.
+                            A Product of Mangroves For Tomorrow's project
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Button size="lg" className="group">
-                                Explore Monitoring Sites
-                                <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                                <a
+                                    className="flex items-center"
+                                    href="https://gedae.ggpen.gov.ao/ferramenta-de-visualizacao/otchiva/index.php"
+                                    rel="noopener noreferrer"
+                                >
+                                    Explore
+                                    <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                                </a>
                             </Button>
                             <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
-                                Learn About Our Mission
+                                <a className="flex items-center" href="./#usmore" rel="noopener noreferrer">
+                                    Learn More
+                                </a>
                             </Button>
                         </div>
                     </motion.div>
@@ -76,7 +83,7 @@ export function Hero() {
             <div className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-black/20 backdrop-blur-sm">
                 <div className="container mx-auto px-4 py-6 flex flex-wrap justify-between items-center gap-8 text-white/90">
                     <div className="flex items-center gap-3">
-                        <div className="text-3xl font-serif font-bold text-[#c4703d]">12</div>
+                        <div className="text-3xl font-serif font-bold text-[#c4703d]">7</div>
                         <div className="text-sm leading-tight">
                             Provinces
                             <br />
@@ -84,15 +91,15 @@ export function Hero() {
                         </div>
                     </div>
                     <div className="flex items-center gap-3">
-                        <div className="text-3xl font-serif font-bold text-[#c4703d]">24/7</div>
+                        <div className="text-3xl font-serif font-bold text-[#c4703d]">16</div>
                         <div className="text-sm leading-tight">
-                            Satellite
+                            Municipalities
                             <br />
-                            Surveillance
+                            Mapped
                         </div>
                     </div>
                     <div className="flex items-center gap-3">
-                        <div className="text-3xl font-serif font-bold text-[#c4703d]">1.2M</div>
+                        <div className="text-3xl font-serif font-bold text-[#c4703d]">43.000</div>
                         <div className="text-sm leading-tight">
                             Hectares
                             <br />

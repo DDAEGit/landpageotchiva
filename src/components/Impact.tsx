@@ -77,7 +77,7 @@ export function Impact() {
                     <div className="w-full lg:w-1/2">
                         <h2 className="text-[#1a4d2e] font-bold text-sm tracking-widest uppercase mb-4">Real Impact</h2>
                         <h3 className="text-4xl font-serif font-bold text-stone-900 mb-6">
-                            Monitoring <span className="text-[#c4703d]">43.000 hectares</span> approximately
+                            Mapping <span className="text-[#c4703d]">43.000 hectares</span> approximately
                         </h3>
                         <p className="text-lg text-stone-600 mb-10">
                             The tool makes it possible to check changes in mangroves over the last five years, since 2020, as well as
@@ -87,23 +87,23 @@ export function Impact() {
                         <div className="grid grid-cols-2 gap-6">
                             {[
                                 {
-                                    label: "Sites Monitored",
-                                    value: "42",
+                                    label: "Sites Mapped",
+                                    value: "16",
                                     suffix: "+",
                                 },
                                 {
                                     label: "Data Points",
-                                    value: "1.5M",
-                                    suffix: "",
+                                    value: "1.000",
+                                    suffix: "+",
                                 },
                                 {
-                                    label: "Alerts Resolved",
-                                    value: "85",
-                                    suffix: "%",
+                                    label: "Hectares Mapped",
+                                    value: "43.367",
+                                    // suffix: "%",
                                 },
                                 {
-                                    label: "Communities",
-                                    value: "12",
+                                    label: "Year Old Project",
+                                    value: "1",
                                     suffix: "",
                                 },
                             ].map((stat, index) => (

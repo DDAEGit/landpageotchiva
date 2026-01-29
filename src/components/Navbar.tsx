@@ -22,7 +22,7 @@ export function Navbar() {
                         <Leaf className="w-6 h-6 text-white" />
                     </div>
                     <span className={`font-serif font-bold text-xl tracking-tight ${isScrolled ? "text-[#1a4d2e]" : "text-white"}`}>
-                        Angola Mangrove<span className="text-[#c4703d]">Monitor</span>
+                        Angola Mangrove <span className="text-[#c4703d]">Maps</span>
                     </span>
                 </div>
 
@@ -38,7 +38,7 @@ export function Navbar() {
             </a>
           )} */}
                     <Button variant={isScrolled ? "primary" : "secondary"} size="sm">
-                        <a href="https://gedae.ggpen.gov.ao/ferramenta-de-visualizacao/otchiva/login.php" rel="noopener noreferrer">
+                        <a href="https://gedae.ggpen.gov.ao/ferramenta-de-visualizacao/otchiva/index.php" rel="noopener noreferrer">
                             Login
                         </a>
                     </Button>
