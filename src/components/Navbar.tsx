@@ -39,7 +39,7 @@ export function Navbar() {
                     ))} */}
 
                     {[
-                        "https://gedae.ggpen.gov.ao/ferramenta-de-visualizacao/projeto-seca/images/ukflag.png",
+                        "https://gedae.ggpen.gov.ao/ferramenta-de-visualizacao/otchiva/images/Flag_of_Norway.svg.png",
                         "https://gedae.ggpen.gov.ao/ferramenta-de-visualizacao/projeto-seca/images/ptflag.png",
                     ].map((item) => (
                         <img width={30} height={15} src={item} alt="Forest texture" className="" />
