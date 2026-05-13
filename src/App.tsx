@@ -35,7 +35,7 @@ export function App() {
                         </p> */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" variant="secondary">
-                                <a href="https://gedae.ggpen.gov.ao/ferramenta-de-visualizacao/otchiva/index.php" rel="noopener noreferrer">
+                                <a href="https://gedae.ggpen.gov.ao/ferramenta-de-visualizacao/otchiva/en" rel="noopener noreferrer">
                                     Access the Platform
                                 </a>
                             </Button>
